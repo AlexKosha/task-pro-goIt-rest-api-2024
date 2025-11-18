@@ -7,7 +7,7 @@ import { v2 as cloudinary } from "cloudinary";
 import bcryptjs from "bcryptjs";
 
 const {
-  SENDGRID_API_KEY,
+  // SENDGRID_API_KEY,
   SECRET_KEY,
   CLOUDINARY_CLOUD_NAME,
   CLOUDINARY_API_KEY,
@@ -68,9 +68,9 @@ export const sendMail = async (email, comment) => {
     text: `Email to answer: ${email}<br>Comment: ${comment}`,
   };
 
-  sendgrid.setApiKey(SENDGRID_API_KEY);
+  // sendgrid.setApiKey(SENDGRID_API_KEY);
 
-  await sendgrid.send(helpEmail);
+  // await sendgrid.send(helpEmail);
   return true;
 };
 
